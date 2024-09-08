@@ -1,26 +1,10 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelectorAll('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
+const btnOpen = document.querySelector('.open-btn');
+const backdrop = document.querySelector('.backdrop');
+const btnClose = document.querySelector('.close-btn');
 
-  refs.openModalBtn.forEach(element => {
-    element.addEventListener('click', toggleModal);
-  });
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+const handleShowModal = () => {
+  document.body.classList.toggle('is-modal-open');
+};
 
-  //* Закривання по кліку на бекдроп
-
-  refs.modal.addEventListener('click', removeModal);
-  function removeModal(e) {
-    if (e.target === e.currentTarget) {
-      refs.modal.classList.add('is-hidden');
-    }
-  }
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-    document.body.classList.toggle('no-scroll');
-  }
-})();
+btnOpen.addEventListener('click', handleShowModal);
+btnClose.addEventListener('click', handleShowModal);

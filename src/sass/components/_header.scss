@@ -1,22 +1,17 @@
-.top-line {
-}
-.container {
+.nav-list {
+  display: none;
 }
 .top-line-container {
-}
-.main {
-}
-.navigation {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
-}
-.nav-list {
-}
-.nav-item {
-}
-.features-icon {
-}
-.user-icon {
-}
-.cart-icon {
+  color: #000;
+
+  font-family: $mainFonts;
+  font-size: 18px;
+  font-weight: 800;
 }
