@@ -1,0 +1,41 @@
+.title-header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 185px;
+}
+
+.title-header {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+}
+.text-title {
+  color: #717171;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+}
+.information-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 310px;
+  background-color: #000;
+}
+.info-list {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
