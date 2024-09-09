@@ -1,14 +1,16 @@
 .mobile-menu-wrapper {
-  min-width: 320px;
   position: fixed;
-
   top: 0;
   left: 0;
-  z-index: 9999999;
-  height: 100%;
+
   width: 100vw;
+  height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   background-color: #000;
+
+  z-index: 10;
 
   body.is-modal-open & {
     opacity: 1;
@@ -24,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 29px;
+  margin-bottom: 60px;
 }
 .mob-menu-btns {
   stroke: #fff;
@@ -44,8 +46,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-top: 60px;
-  padding-left: 7px;
+  margin-bottom: 60px;
   color: #fff;
   font-family: Roboto;
   font-size: 14px;
@@ -56,26 +57,21 @@
   flex-direction: row;
   gap: 36px;
   justify-content: center;
-  padding-top: 60px;
   align-items: center;
 }
 .user-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 31px;
-  height: 31px;
-  border: #fff solid;
-  border-radius: 50%;
-  opacity: 0.75;
+  @extend %btnStyle;
 }
 .cart-btn {
+  @extend %btnStyle;
+}
+.features-icon {
+  margin-left: 4px;
+  width: 10px;
+  height: 10px;
+  fill: #fff;
+}
+.features {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 31px;
-  height: 31px;
-  border: #fff solid;
-  border-radius: 50%;
-  opacity: 0.75;
 }

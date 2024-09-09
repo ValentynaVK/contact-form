@@ -1,9 +1,13 @@
+.header {
+  border-bottom: 1px solid #bfbfbf;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 14px;
+}
 .nav-list {
   display: none;
 }
 .top-line-container {
-  padding-top: 30px;
-  padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
