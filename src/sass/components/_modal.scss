@@ -61,9 +61,18 @@
 }
 .user-btn {
   @extend %btnStyle;
+  &:hover,
+  &:focus {
+    background-color: #fff;
+  }
 }
 .cart-btn {
   @extend %btnStyle;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+  }
 }
 .features-icon {
   margin-left: 4px;

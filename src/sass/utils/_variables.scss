@@ -5,12 +5,14 @@ $mainFonts: 'Poppins', sans-serif;
   border: #fff;
 }
 %btnStyle {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 31px;
   height: 31px;
-  border: #fff solid;
+  border: 1px #fff solid;
   border-radius: 50%;
   opacity: 0.75;
+  transition: border-color 0.25s linear, box-shadow 0.25s linear;
 }
